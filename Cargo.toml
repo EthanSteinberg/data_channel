@@ -1,0 +1,10 @@
+[package]
+name = "data_channel"
+version = "0.1.0"
+authors = ["Ethan Steinberg <steinberge@google.com>"]
+
+[dependencies]
+libc = "0.2.14"
+
+[target.'cfg(not(target_arch = "asmjs"))'.dependencies]
+ws = "*"
